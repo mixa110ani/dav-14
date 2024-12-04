@@ -1,0 +1,41 @@
+@mixin headeri(){
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    z-index: 10;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+   -webkit-box-pack: space-evenly;
+       -ms-flex-pack: space-evenly;
+           justify-content: space-evenly;
+    
+}
+
+@mixin flex(){
+
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+}
+
+@mixin cards(){
+    height: 900px;
+    width: 1205px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: center;
+}
+

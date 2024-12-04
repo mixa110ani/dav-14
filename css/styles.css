@@ -1,0 +1,213 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header nav ul li {
+  font-family: Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #636060;
+  padding-left: 50px;
+}
+header nav ul li:hover {
+  color: black;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.imga {
+  display: flex;
+  flex-direction: column;
+  margin: 84px auto;
+  width: 70%;
+  height: 50vh;
+  background-image: url(../images/beach.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  padding: 100px 20px;
+}
+.imga p {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.imga h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.flex .discover {
+  width: 12%;
+  height: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.flex .discover h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #636060;
+  margin-bottom: 9px;
+}
+.flex .discover h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 37px;
+}
+.flex .discover p {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #636060;
+}
+
+.flex .cards--card1 {
+  width: 289px;
+  height: 292px;
+  margin-right: 33px;
+}
+.flex .cards--card1 img {
+  width: 100%;
+  height: 174px;
+  margin-bottom: 23px;
+}
+.flex .cards--card1 h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: #343232;
+  width: 100%;
+  margin-bottom: 9px;
+}
+.flex .cards--card1 p {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #636060;
+}
+
+header {
+  width: 100%;
+  height: 8%;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header nav {
+  display: flex;
+}
+header nav i {
+  display: none !important;
+}
+@media only screen and (max-width: 768px) {
+  header nav i {
+    display: inline-block !important;
+  }
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  header nav ul {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .imga {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+@media only screen and (max-width: 1024px) {
+  .flex .discover {
+    width: 75%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+.flex .cards {
+  height: 900px;
+  width: 1205px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media only screen and (max-width: 1024px) {
+  .flex .cards {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .flex .cards--card1 {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .flex .cards--card1 p {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */

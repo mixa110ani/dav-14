@@ -1,0 +1,109 @@
+@import "variables";
+
+%listing{
+    font-family: $font-stack;
+    font-size: 17px;
+    font-weight: 400;
+    color: #636060;
+    padding-left: 50px;
+
+    &:hover {color:black; font-size:20px; text-decoration: underline;}
+}
+
+%imga{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 84px auto;
+    width: 70%;
+    height: 50vh;
+    background-image: url(../images/beach.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #FFF;
+    padding: 100px 20px;
+    p{
+        font-family: $font-stack;
+    font-size: 1.5rem;
+    font-weight: 700;
+    }
+
+    h1{
+        font-family: $font-stack;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+}
+
+%discover{
+    width: 12%;
+    height: 100%;
+ padding: 5px;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+h1{
+    font-family: $font-stack;
+font-size: 17px;
+font-weight: 400;
+color: #636060;
+margin-bottom: 9px;
+}
+h2{ font-family: $font-stack;
+font-size: 28px;
+font-weight: 400;
+margin-bottom: 37px;
+
+}
+p{
+    font-family: $font-stack;
+    font-size: 20px;
+    font-weight: 400;
+    color: #636060;
+}
+}
+
+
+%card1{
+
+    width: 289px;
+    height: 292px;
+    margin-right: 33px;
+    img{
+        width: $width-cardimage;
+        height: $height-cardimage;
+        margin-bottom: 23px;
+    }
+    h1{
+        font-family: $font-stack;
+        font-size: 19px;
+        font-weight: 400;
+        color: #343232;
+        width: 100%;
+        margin-bottom: 9px;
+    }
+    p{
+        font-family: $font-stack;
+        font-size: 18px;
+        font-weight: 400;
+        color: #636060;
+        
+    }
+
+}

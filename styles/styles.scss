@@ -1,0 +1,67 @@
+@import "resetstyle";
+@import "placeholder";
+@import "variables";
+@import "mixins";
+
+
+header{
+    @include headeri;
+    nav{
+        @include flex;
+        i{
+            display: none !important;
+            @media only screen and (max-width: 768px){
+                display:inline-block !important;
+            }
+
+        }
+        ul{
+            list-style-type: none;
+            @include flex;
+            @media only screen and (max-width: 768px){
+                display:none;
+            }
+            li{
+                @extend %listing;
+            }
+        }
+    }
+}
+
+.imga{
+    @extend %imga;
+    @media only screen and (max-width: 1024px){
+        width: max(100%);
+        height: max(500px);
+    }
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    .discover{
+        @extend %discover;
+        @media only screen and (max-width: 1024px){
+            width: 75%;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+    .cards{
+        @include cards;
+        @media only screen and (max-width: 1024px){ 
+            width: 75%}
+        &--card1{
+            @extend %card1;
+            @media only screen and (max-width: 1024px){
+                margin-bottom: 50px;
+            }
+            @media only screen and (max-width: 480px){
+                p{
+                    display:none;
+                }
+            }
+        }
+    }
+}
